@@ -19,6 +19,7 @@ const Navbar = () => {
             toggle={setIsOpen}
             size={20}
             direction='right'
+            onToggle={toggleMenu}
           />
         </div>
         <ul
