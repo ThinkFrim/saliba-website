@@ -12,8 +12,8 @@ export const cardsData = [
     desc: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do
-          eiusmod tempor <br /> incididunt ut labore et dolore magna <br />{" "}
+          Lorem ipsum dolor sit amet, consectetur <br className="hidden md:block" /> adipiscing elit, sed do
+          eiusmod tempor <br className="hidden md:block" /> incididunt ut labore et dolore magna <br className="hidden md:block" />{" "}
           aliqua.{" "}
         </p>
       </>
@@ -26,8 +26,8 @@ export const cardsData = [
     desc: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do
-          eiusmod tempor <br /> incididunt ut labore et dolore magna <br />{" "}
+          Lorem ipsum dolor sit amet, consectetur <br className="hidden md:block" /> adipiscing elit, sed do
+          eiusmod tempor <br className="hidden md:block" /> incididunt ut labore et dolore magna <br className="hidden md:block" />{" "}
           aliqua.{" "}
         </p>
       </>
@@ -40,9 +40,9 @@ export const cardsData = [
     desc: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do
-          eiusmod tempor <br /> incididunt ut labore et dolore magna <br />{" "}
-          aliqua.{" "}
+          Lorem ipsum dolor sit amet, consectetur <br className="hidden md:block" /> adipiscing elit, sed do
+          eiusmod tempor <br className="hidden md:block" /> incididunt ut labore et dolore magna <br className="hidden md:block" />
+          aliqua.
         </p>
       </>
     ),

@@ -36,7 +36,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-3 mt-24'>
+      <div className='flex flex-col lg:flex-row justify-center gap-20 py-24'>
         {cardsData.map((cards, index) => (
           <Card
             img={cards.img}
@@ -78,9 +78,9 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className='flex justify-center items-center gap-24 my-24'>
-            <div className='text-center md:text-left'>
-              <h1>Our Story</h1>
+          <div className='flex flex-col lg:flex-row justify-center items-center gap-24 my-24'>
+            <div className='text-center lg:text-left'>
+              <h1 className="text-3xl">Our Story</h1>
               <p className='pt-4'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod <br className='hidden sm:block' /> tempor incididunt ut
@@ -98,7 +98,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className='text-center'>
+        <div className='text-center' id='products'>
           <div className='text-center py-12'>
             <h1 className='text-4xl pb-12'>Products</h1>
             <div className='flex justify-center items-center gap-10'>
@@ -107,7 +107,7 @@ const Home = () => {
               <div className='w-[65px] h-[2px] bg-btnColor' />
             </div>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-4 mt-24'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-24'>
             {productData.map((product, index) => (
               <Card
                 img={product.img}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Turn as Hamburger } from "hamburger-react";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +13,13 @@ const Navbar = () => {
     <nav>
       <div className='bg-blue flex items-center justify-between lg:justify-start gap-[5rem] p-6 text-white'>
         <h1>LogoHere</h1>
-        <div className='z-20 flex justify-between'>
-            <button onClick={toggleMenu} className='lg:hidden block'>
-              {isOpen ? "close" : "open"}
-            </button>
+        <div className='z-20 flex justify-between lg:hidden'>
+          <Hamburger
+            toggled={isOpen}
+            toggle={setIsOpen}
+            size={20}
+            direction='right'
+          />
         </div>
         <ul
           className={`${
