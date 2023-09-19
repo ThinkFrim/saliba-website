@@ -9,10 +9,10 @@ const Navbar = () => {
   };
   return (
     <nav>
-      <div className='bg-blue flex items-center justify-between gap-[5rem] p-6 text-white'>
+      <div className='bg-blue flex items-center justify-between lg:justify-start gap-[5rem] p-6 text-white'>
         <h1>LogoHere</h1>
         <div className='z-20 flex justify-between'>
-            <button onClick={toggleMenu} className=''>
+            <button onClick={toggleMenu} className='lg:hidden block'>
               {isOpen ? "close" : "open"}
             </button>
         </div>

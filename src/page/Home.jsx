@@ -6,14 +6,19 @@ import cowImage from "../assets/images/ourStory.png";
 import blacCowIcon from "../assets/icons/Cowicon.svg";
 import { cardsData, productData } from "../data/dummy";
 import Card from "../components/card/Card";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
     <div>
       <div className='bg-hero min-h-screen'>
         <div className='text-center text-white pt-52'>
-          <h1 className='text-3xl xl:text-[120px]'>Milk & More</h1>
-          <h1 className='text-xl xl:text-[50px] py-5'>Fresh Local Delivered</h1>
+          <h1 className='text-5xl pb-5 md:text-[100px] md:pb-12'>
+            Milk & More
+          </h1>
+          <h1 className='text-2xl pb-5 md:text-[40px] md:pb-10'>
+            Fresh Local Delivered
+          </h1>
           <button className='xl:text-2xl p-4 bg-blue px-12 rounded-sm'>
             View our product
           </button>
@@ -42,9 +47,9 @@ const Home = () => {
         ))}
       </div>
       <div className='main-bg min-h-screen -z-10'>
-        <div className='pt-14 mx-auto relative container z-10 text-center'>
+        <div className='pt-14 mx-auto relative container z-10 text-center md:text-left'>
           <h1 className='pb-5 text-btnColor text-5xl'>What's Fresh</h1>
-          <div className='flex justify-center  items-center gap-10'>
+          <div className='flex justify-center  items-center gap-10 md:justify-start'>
             <div className='w-[65px] h-[2px] bg-white' />
             <img src={cowIcon} alt='cow icon' />
             <div className='w-[65px] h-[2px] bg-white' />
@@ -73,8 +78,8 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className='grid'>
-            <div className='text-center'>
+          <div className='flex justify-center items-center gap-24 my-24'>
+            <div className='text-center md:text-left'>
               <h1>Our Story</h1>
               <p className='pt-4'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -86,10 +91,14 @@ const Home = () => {
                 aliqua.
               </p>
             </div>
-            <img src={cowImage} alt='' className='hidden md:block' />
+            <img
+              src={cowImage}
+              alt=''
+              className='hidden md:block rounded-full w-auto'
+            />
           </div>
         </div>
-        <div>
+        <div className='text-center'>
           <div className='text-center py-12'>
             <h1 className='text-4xl pb-12'>Products</h1>
             <div className='flex justify-center items-center gap-10'>
@@ -98,7 +107,7 @@ const Home = () => {
               <div className='w-[65px] h-[2px] bg-btnColor' />
             </div>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 mt-24'>
+          <div className='grid grid-cols-1 lg:grid-cols-4 mt-24'>
             {productData.map((product, index) => (
               <Card
                 img={product.img}
@@ -108,9 +117,12 @@ const Home = () => {
               />
             ))}
           </div>
-          <button>View All Product</button>
+          <button className='bg-blue p-3 px-10 text-xl text-white my-5'>
+            View All Product
+          </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
